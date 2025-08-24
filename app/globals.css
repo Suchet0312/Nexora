@@ -9,6 +9,14 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  @apply bg-black text-white;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
