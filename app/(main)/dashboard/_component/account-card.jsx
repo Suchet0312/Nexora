@@ -15,7 +15,7 @@ import Link from "next/link";
 import { updateDefaultAccount } from "@/actions/account";
 import { toast } from "sonner";
 
-const AccountCard=({ account })=> {
+export default function AccountCard({ account }){
   const { name, type, balance, id, isDefault } = account;
 
     const {
@@ -89,4 +89,3 @@ const AccountCard=({ account })=> {
     </Card>
   );
 }
-export default AccountCard;
